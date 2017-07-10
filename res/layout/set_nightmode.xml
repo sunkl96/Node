@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?attr/source_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_night"
+    tools:context=".MainActivity" >
+    <include layout="@layout/title_main"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:textColor="?attr/gray_3_double"
+            android:id="@+id/tv_title"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置夜间模式" />
+
+        <Button
+            android:layout_toRightOf="@id/tv_title"
+            android:id="@+id/cb_setting"
+            android:layout_width="wrap_content"
+            android:text="启动"
+            android:layout_marginLeft="90dp"
+            android:textSize="18dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:textColor="?attr/gray_3_double"
+            android:id="@+id/updatepassword"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改密码" />
+
+        <Button
+            android:layout_toRightOf="@id/updatepassword"
+            android:id="@+id/toupdate"
+            android:layout_width="wrap_content"
+            android:text="去修改"
+            android:layout_marginLeft="130dp"
+            android:textSize="18dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="200dp" >
+
+
+
+        <Button
+            android:id="@+id/cb"
+            android:layout_width="160dp"
+            android:layout_marginLeft="70dp"
+            android:background="@drawable/nightback"
+            android:layout_height="200dp" />
+    </RelativeLayout>
+    
+        
+</LinearLayout>

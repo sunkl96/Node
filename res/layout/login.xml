@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical" 
+		android:background="@drawable/bg">
+		<LinearLayout
+				android:id="@+id/content"
+				android:layout_width="fill_parent"
+				android:layout_height="0dp" 
+				android:layout_weight="1" 
+				android:orientation="vertical">
+			
+		</LinearLayout>
+		
+		<RelativeLayout
+		    android:layout_width="match_parent"  
+		    android:gravity="bottom"
+		    android:layout_height="200dp">  
+		    
+		    <TableLayout
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    android:stretchColumns="1"
+				     >
+				
+				   <TableRow>
+				
+				        <EditText
+				            android:id="@+id/account"
+				            android:layout_width="260dp"
+				            android:layout_marginLeft="50dp"
+				            android:textColor="#000000"
+				            android:hint="account"
+				            android:layout_height="wrap_content"/>
+				    </TableRow>
+				
+				    <TableRow>
+				
+				        <EditText
+				            android:id="@+id/password"
+				            android:layout_height="wrap_content"
+				            android:layout_width="260dp"
+				            android:layout_marginLeft="50dp"
+				            android:textColor="#000000"
+				            android:hint="password"
+				            android:inputType="textPassword" />
+				    </TableRow>
+				
+				    <TableRow>
+				
+				        <Button
+				            android:id="@+id/login"
+				            android:layout_height="wrap_content"
+				            android:layout_marginTop="25dp"
+				            android:layout_marginLeft="50dp"
+				            android:layout_marginRight="50dp"
+				            android:background="#090c1d"
+				            android:textColor="#ffffff"
+				            android:textSize="20dp"
+				            android:layout_span="2"
+				            android:text="登录" />
+				    </TableRow>
+				 	<TableRow>
+				
+				        <Button
+				            android:id="@+id/register"
+				            android:layout_height="wrap_content"
+				            android:layout_marginTop="27dp"
+				            android:background="#090c1d"
+				            android:textColor="#ffffff"
+				            android:textSize="13dp"
+				            android:layout_span="2"
+				            android:gravity="center"
+				            android:text="没有账号？注册一个呗" />
+				    </TableRow>
+				</TableLayout>
+		      
+		</RelativeLayout>
+
+	</LinearLayout>

@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/source_bg"
+    android:orientation="vertical">
+	<include layout="@layout/title_main"/>
+	
+	
+	    <ListView
+	        android:id="@+id/list_view"
+	        android:layout_width="match_parent"
+	        android:layout_marginTop="8dp"
+	        android:layout_weight="1"
+	        android:layout_height="match_parent">
+	    </ListView>
+	    
+	    <TextView
+		    android:id="@+id/tip"
+            android:layout_width="match_parent"
+	        android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginRight="20dp"            
+            android:textSize="20dp"
+            android:textColor="?attr/gray_3_double"
+            android:text="你一篇日志都还没有写诶...快新建一篇日志写写今天都发生了什么吧！" />
+    
+	<RelativeLayout
+		    android:layout_width="match_parent"  
+		    android:gravity="bottom"
+		    android:layout_height="45dp">  
+		    
+		    <Button   
+		        android:id="@+id/bt_add"  
+		        android:layout_height="45dp"  
+		        android:layout_width="170dp"  
+		        android:background="#000000"
+		        android:layout_alignParentLeft="true"  
+		        android:layout_marginLeft="7dp"
+		        android:textColor="#ffffff"
+		        android:textSize="20dp"
+		        android:text="新增日志" /> 
+		    <Button   
+		        android:id="@+id/bt_query"  
+		        android:layout_height="45dp"  
+		        android:layout_width="170dp"  
+		        android:layout_marginRight="7dp"
+		        android:layout_alignParentRight="true"  
+		        android:background="#000000"
+		        android:textColor="#ffffff"
+		        android:textSize="20dp"
+		        android:text="查询日志" /> 
+		      
+	</RelativeLayout>
+	
+	
+</LinearLayout>

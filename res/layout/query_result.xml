@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/source_bg"
+    android:orientation="vertical">
+	<include layout="@layout/title_main"/>
+	
+	
+	    <ListView
+	        android:id="@+id/list_view"
+	        android:layout_width="match_parent"
+	        android:layout_marginTop="8dp"
+	        android:layout_height="match_parent">
+	    </ListView>
+    
+		<TextView
+		    android:id="@+id/result"
+            android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginRight="20dp"            
+            android:textSize="20dp"
+            android:textColor="?attr/gray_3_double"
+            android:text="并没有找到含有该关键字的记事诶" />
+	
+	
+</LinearLayout>

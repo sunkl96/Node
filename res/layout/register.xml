@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical" 
+		android:background="#090c1d">
+		<LinearLayout
+				android:id="@+id/content"
+				android:layout_width="fill_parent"
+				android:layout_height="0dp" 
+				android:layout_weight="1" 
+				android:orientation="vertical">
+				
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="40dp"
+		        android:text="My Daily Life"
+		        android:textColor="#ffffff"
+		        android:gravity="center_vertical|center_horizontal"
+		        android:textSize="35dp" />
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:text="注册"
+		        android:textColor="#ffffff"
+		        android:gravity="center_vertical|center_horizontal"
+		        android:textSize="35dp" />
+			
+		</LinearLayout>
+		
+		<RelativeLayout
+		    android:layout_width="match_parent"  
+		    android:gravity="bottom"
+		    android:layout_height="400dp">  
+		    
+		    <TableLayout
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    android:paddingLeft="20dp"
+				    android:paddingRight="20dp"
+				    android:stretchColumns="1"
+				     >
+				
+				    <TableRow>
+				
+				        <TextView
+				            android:layout_height="wrap_content"
+				            android:textSize="22dp"
+				            android:textColor="#ffffff"
+				            android:text="账号:" />
+				
+				        <EditText
+				            android:id="@+id/account_r"
+				            android:textColor="#ffffff"  
+				            android:layout_height="wrap_content"/>
+				    </TableRow>
+				
+				    <TableRow>
+				
+				        <TextView
+				            android:layout_height="wrap_content"
+				            android:textSize="22dp"
+				            android:textColor="#ffffff"
+				            android:text="密码:" />
+				
+				        <EditText
+				            android:id="@+id/password_r"
+				            android:textColor="#ffffff"  
+				            android:layout_height="wrap_content"
+				            android:inputType="textPassword" />
+				    </TableRow>
+				
+				    <TableRow>
+				
+				        <Button
+				            android:id="@+id/register_bt"
+				            android:layout_height="wrap_content"
+				            android:layout_marginTop="60dp"
+				            android:layout_marginLeft="40dp"
+				            android:layout_marginRight="40dp"
+				            android:background="#ffffff"
+				            android:textColor="#090c1d"
+				            android:radius="5dip"
+				            android:textSize="25dp"
+				            android:layout_span="2"
+				            android:text="注册"
+				            />
+				    </TableRow>
+				 	
+				</TableLayout>
+		      
+		</RelativeLayout>
+
+	</LinearLayout>

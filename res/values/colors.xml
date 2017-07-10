@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- 夜间模式 -->
+    
+    <color name="gray_3_night">#9cb4cc</color>
+    <drawable name="source_bg_night">#252f39</drawable>
+    
+    <!-- 白天模式 -->
+    <color name="gray_3_light">#515151</color>
+    <drawable name="source_bg_light">#ffffff</drawable>
+
+
+</resources>
